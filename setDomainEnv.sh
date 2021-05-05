@@ -449,7 +449,8 @@ fi
 
 # ADD EXTENSIONS TO CLASSPATHS
 # Adicionado por Valadares
-set PRE_CLASSPATH=/u01/oracle/user_projects/domains/base_domain/properties/
+PRE_CLASSPATH="/u01/oracle/user_projects/domains/base_domain/properties/"
+export PRE_CLASSPATH
 
 if [ "${EXT_PRE_CLASSPATH}" != "" ] ; then
 	if [ "${PRE_CLASSPATH}" != "" ] ; then
